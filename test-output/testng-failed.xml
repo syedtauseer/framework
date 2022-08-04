@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="script1.Dem1">
+      <class name="script1.Dem2">
         <methods>
           <include name="createTest"/>
-          <include name="test1"/>
           <include name="openApp"/>
           <include name="initReport"/>
           <include name="publishReport"/>
           <include name="closeApp"/>
+          <include name="test2" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- script1.Dem1 -->
+      </class> <!-- script1.Dem2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

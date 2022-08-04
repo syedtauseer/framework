@@ -1,52 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Facebook – log in or sign up]]>
     </line>
     <line>
-      <![CDATA[Syed]]>
+      <![CDATA[A1]]>
     </line>
     <line>
-      <![CDATA[Ahad]]>
+      <![CDATA[B1]]>
     </line>
     <line>
-      <![CDATA[Rabiya]]>
+      <![CDATA[Facebook – log in or sign up]]>
     </line>
     <line>
-      <![CDATA[Banu]]>
+      <![CDATA[A2]]>
     </line>
     <line>
-      <![CDATA[Syed ]]>
+      <![CDATA[B2]]>
     </line>
     <line>
-      <![CDATA[Tauseer]]>
+      <![CDATA[Facebook – log in or sign up]]>
+    </line>
+    <line>
+      <![CDATA[A3]]>
+    </line>
+    <line>
+      <![CDATA[B3]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-08-04T18:31:06 IST" name="Default suite" finished-at="2022-08-04T18:31:15 IST" duration-ms="9108">
+  <suite started-at="2022-08-04T18:36:57 IST" name="Default suite" finished-at="2022-08-04T18:37:17 IST" duration-ms="19712">
     <groups>
       <group name="smoke">
-        <method signature="Dem1.test1()[pri:1, instance:script1.Dem1@4d5650ae]" name="test1" class="script1.Dem1"/>
+        <method signature="Dem2.test2([Ljava.lang.String;)[pri:2, instance:script1.Dem2@4d5650ae]" name="test2" class="script1.Dem2"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-08-04T18:31:06 IST" name="Default test" finished-at="2022-08-04T18:31:15 IST" duration-ms="9108">
-      <class name="script1.Dem1">
-        <test-method is-config="true" signature="initReport()[pri:0, instance:script1.Dem1@4d5650ae]" started-at="2022-08-04T18:31:05 IST" name="initReport" finished-at="2022-08-04T18:31:06 IST" duration-ms="323" status="PASS">
+    <test started-at="2022-08-04T18:36:57 IST" name="Default test" finished-at="2022-08-04T18:37:17 IST" duration-ms="19712">
+      <class name="script1.Dem2">
+        <test-method is-config="true" signature="initReport()[pri:0, instance:script1.Dem2@4d5650ae]" started-at="2022-08-04T18:36:57 IST" name="initReport" finished-at="2022-08-04T18:36:57 IST" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initReport -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:script1.Dem1@4d5650ae]" started-at="2022-08-04T18:31:06 IST" name="createTest" finished-at="2022-08-04T18:31:06 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:script1.Dem2@4d5650ae]" started-at="2022-08-04T18:36:58 IST" name="createTest" finished-at="2022-08-04T18:36:58 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void script1.Dem1.test1()]]>
+                <![CDATA[public void script1.Dem2.test2(java.lang.String[])]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method is-config="true" signature="openApp(java.lang.String)[pri:0, instance:script1.Dem1@4d5650ae]" started-at="2022-08-04T18:31:06 IST" name="openApp" finished-at="2022-08-04T18:31:12 IST" duration-ms="6673" status="PASS">
+        <test-method is-config="true" signature="openApp(java.lang.String)[pri:0, instance:script1.Dem2@4d5650ae]" started-at="2022-08-04T18:36:58 IST" name="openApp" finished-at="2022-08-04T18:37:05 IST" duration-ms="6670" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,20 +63,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="test1()[pri:1, instance:script1.Dem1@4d5650ae]" started-at="2022-08-04T18:31:12 IST" name="test1" finished-at="2022-08-04T18:31:14 IST" duration-ms="1835" status="FAIL">
+        <test-method signature="test2([Ljava.lang.String;)[pri:2, instance:script1.Dem2@4d5650ae]" started-at="2022-08-04T18:37:05 IST" name="test2" data-provider="getData" finished-at="2022-08-04T18:37:05 IST" duration-ms="39" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@71a4f441]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [anull] but found [bcd]]]>
+              <![CDATA[expected [null] but found [acb]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [anull] but found [bcd]
+              <![CDATA[java.lang.AssertionError: expected [null] but found [acb]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at script1.Dem1.test1(Dem1.java:24)
+at script1.Dem2.test2(Dem2.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,46 +120,238 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[Facebook – log in or sign up]]>
             </line>
             <line>
-              <![CDATA[Syed]]>
+              <![CDATA[A1]]>
             </line>
             <line>
-              <![CDATA[Ahad]]>
-            </line>
-            <line>
-              <![CDATA[Rabiya]]>
-            </line>
-            <line>
-              <![CDATA[Banu]]>
-            </line>
-            <line>
-              <![CDATA[Syed ]]>
-            </line>
-            <line>
-              <![CDATA[Tauseer]]>
+              <![CDATA[B1]]>
             </line>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:script1.Dem1@4d5650ae]" started-at="2022-08-04T18:31:14 IST" name="closeApp" finished-at="2022-08-04T18:31:15 IST" duration-ms="562" status="PASS">
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:script1.Dem2@4d5650ae]" started-at="2022-08-04T18:37:05 IST" name="closeApp" finished-at="2022-08-04T18:37:05 IST" duration-ms="466" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=FAILURE method=Dem1.test1()[pri:1, instance:script1.Dem1@4d5650ae] output=Facebook – log in or sign up]]]>
+                <![CDATA[[TestResult name=test2 status=FAILURE method=Dem2.test2([Ljava.lang.String;)[pri:2, instance:script1.Dem2@4d5650ae] output=Facebook – log in or sign up]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void script1.Dem1.test1()]]>
+                <![CDATA[public void script1.Dem2.test2(java.lang.String[])]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="publishReport()[pri:0, instance:script1.Dem1@4d5650ae]" started-at="2022-08-04T18:31:15 IST" name="publishReport" finished-at="2022-08-04T18:31:15 IST" duration-ms="458" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:script1.Dem2@4d5650ae]" started-at="2022-08-04T18:37:05 IST" name="createTest" finished-at="2022-08-04T18:37:05 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void script1.Dem2.test2(java.lang.String[])]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTest -->
+        <test-method is-config="true" signature="openApp(java.lang.String)[pri:0, instance:script1.Dem2@4d5650ae]" started-at="2022-08-04T18:37:05 IST" name="openApp" finished-at="2022-08-04T18:37:11 IST" duration-ms="6102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[./config.properties]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="test2([Ljava.lang.String;)[pri:2, instance:script1.Dem2@4d5650ae]" started-at="2022-08-04T18:37:11 IST" name="test2" data-provider="getData" finished-at="2022-08-04T18:37:11 IST" duration-ms="14" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@67f9cb52]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [null] but found [acb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [null] but found [acb]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at script1.Dem2.test2(Dem2.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Facebook – log in or sign up]]>
+            </line>
+            <line>
+              <![CDATA[A2]]>
+            </line>
+            <line>
+              <![CDATA[B2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:script1.Dem2@4d5650ae]" started-at="2022-08-04T18:37:11 IST" name="closeApp" finished-at="2022-08-04T18:37:12 IST" duration-ms="393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test2 status=FAILURE method=Dem2.test2([Ljava.lang.String;)[pri:2, instance:script1.Dem2@4d5650ae] output=Facebook – log in or sign up]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void script1.Dem2.test2(java.lang.String[])]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:script1.Dem2@4d5650ae]" started-at="2022-08-04T18:37:12 IST" name="createTest" finished-at="2022-08-04T18:37:12 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void script1.Dem2.test2(java.lang.String[])]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTest -->
+        <test-method is-config="true" signature="openApp(java.lang.String)[pri:0, instance:script1.Dem2@4d5650ae]" started-at="2022-08-04T18:37:12 IST" name="openApp" finished-at="2022-08-04T18:37:16 IST" duration-ms="4607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[./config.properties]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="test2([Ljava.lang.String;)[pri:2, instance:script1.Dem2@4d5650ae]" started-at="2022-08-04T18:37:16 IST" name="test2" data-provider="getData" finished-at="2022-08-04T18:37:16 IST" duration-ms="18" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@76973a6]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [null] but found [acb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [null] but found [acb]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at script1.Dem2.test2(Dem2.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Facebook – log in or sign up]]>
+            </line>
+            <line>
+              <![CDATA[A3]]>
+            </line>
+            <line>
+              <![CDATA[B3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:script1.Dem2@4d5650ae]" started-at="2022-08-04T18:37:16 IST" name="closeApp" finished-at="2022-08-04T18:37:17 IST" duration-ms="510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test2 status=FAILURE method=Dem2.test2([Ljava.lang.String;)[pri:2, instance:script1.Dem2@4d5650ae] output=Facebook – log in or sign up]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void script1.Dem2.test2(java.lang.String[])]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="publishReport()[pri:0, instance:script1.Dem2@4d5650ae]" started-at="2022-08-04T18:37:17 IST" name="publishReport" finished-at="2022-08-04T18:37:17 IST" duration-ms="503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReport -->
-      </class> <!-- script1.Dem1 -->
+      </class> <!-- script1.Dem2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
