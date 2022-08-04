@@ -23,30 +23,30 @@
       <![CDATA[Tauseer]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-08-04T00:02:31 IST" name="Default suite" finished-at="2022-08-04T00:02:41 IST" duration-ms="9655">
+  <suite started-at="2022-08-04T18:31:06 IST" name="Default suite" finished-at="2022-08-04T18:31:15 IST" duration-ms="9108">
     <groups>
       <group name="smoke">
-        <method signature="Demo1.test1()[pri:1, instance:script.Demo1@4d5650ae]" name="test1" class="script.Demo1"/>
+        <method signature="Dem1.test1()[pri:1, instance:script1.Dem1@4d5650ae]" name="test1" class="script1.Dem1"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-08-04T00:02:31 IST" name="Default test" finished-at="2022-08-04T00:02:41 IST" duration-ms="9655">
-      <class name="script.Demo1">
-        <test-method is-config="true" signature="initReport()[pri:0, instance:script.Demo1@4d5650ae]" started-at="2022-08-04T00:02:31 IST" name="initReport" finished-at="2022-08-04T00:02:31 IST" duration-ms="367" status="PASS">
+    <test started-at="2022-08-04T18:31:06 IST" name="Default test" finished-at="2022-08-04T18:31:15 IST" duration-ms="9108">
+      <class name="script1.Dem1">
+        <test-method is-config="true" signature="initReport()[pri:0, instance:script1.Dem1@4d5650ae]" started-at="2022-08-04T18:31:05 IST" name="initReport" finished-at="2022-08-04T18:31:06 IST" duration-ms="323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initReport -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:script.Demo1@4d5650ae]" started-at="2022-08-04T00:02:31 IST" name="createTest" finished-at="2022-08-04T00:02:31 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:script1.Dem1@4d5650ae]" started-at="2022-08-04T18:31:06 IST" name="createTest" finished-at="2022-08-04T18:31:06 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void script.Demo1.test1()]]>
+                <![CDATA[public void script1.Dem1.test1()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method is-config="true" signature="openApp(java.lang.String)[pri:0, instance:script.Demo1@4d5650ae]" started-at="2022-08-04T00:02:31 IST" name="openApp" finished-at="2022-08-04T00:02:39 IST" duration-ms="7366" status="PASS">
+        <test-method is-config="true" signature="openApp(java.lang.String)[pri:0, instance:script1.Dem1@4d5650ae]" started-at="2022-08-04T18:31:06 IST" name="openApp" finished-at="2022-08-04T18:31:12 IST" duration-ms="6673" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,20 +57,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="test1()[pri:1, instance:script.Demo1@4d5650ae]" started-at="2022-08-04T00:02:39 IST" name="test1" finished-at="2022-08-04T00:02:40 IST" duration-ms="1826" status="FAIL">
+        <test-method signature="test1()[pri:1, instance:script1.Dem1@4d5650ae]" started-at="2022-08-04T18:31:12 IST" name="test1" finished-at="2022-08-04T18:31:14 IST" duration-ms="1835" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [xyz] but found [abcd]]]>
+              <![CDATA[expected [anull] but found [bcd]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [xyz] but found [abcd]
+              <![CDATA[java.lang.AssertionError: expected [anull] but found [bcd]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at script.Demo1.test1(Demo1.java:25)
+at script1.Dem1.test1(Dem1.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -126,27 +126,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:script.Demo1@4d5650ae]" started-at="2022-08-04T00:02:40 IST" name="closeApp" finished-at="2022-08-04T00:02:41 IST" duration-ms="403" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:script1.Dem1@4d5650ae]" started-at="2022-08-04T18:31:14 IST" name="closeApp" finished-at="2022-08-04T18:31:15 IST" duration-ms="562" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=FAILURE method=Demo1.test1()[pri:1, instance:script.Demo1@4d5650ae] output=Facebook – log in or sign up]]]>
+                <![CDATA[[TestResult name=test1 status=FAILURE method=Dem1.test1()[pri:1, instance:script1.Dem1@4d5650ae] output=Facebook – log in or sign up]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void script.Demo1.test1()]]>
+                <![CDATA[public void script1.Dem1.test1()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="publishReport()[pri:0, instance:script.Demo1@4d5650ae]" started-at="2022-08-04T00:02:41 IST" name="publishReport" finished-at="2022-08-04T00:02:41 IST" duration-ms="364" status="PASS">
+        <test-method is-config="true" signature="publishReport()[pri:0, instance:script1.Dem1@4d5650ae]" started-at="2022-08-04T18:31:15 IST" name="publishReport" finished-at="2022-08-04T18:31:15 IST" duration-ms="458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReport -->
-      </class> <!-- script.Demo1 -->
+      </class> <!-- script1.Dem1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

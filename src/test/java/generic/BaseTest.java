@@ -105,12 +105,14 @@ public class BaseTest implements IAutoConst {
 		int status = result.getStatus();
 		if (status == 2) {
 			try {
-				Object timeStamp = new SimpleDateFormat("dd-MM-yyyy-hh-mm-ss").format(new Date());
+				String timeStamp = new SimpleDateFormat("dd-MM-yyyy-hh-mm-ss").format(new Date());
 				TakesScreenshot t = (TakesScreenshot) driver;
 				File scrFile = t.getScreenshotAs(OutputType.FILE);
 				File dstpath = new File(SCREENSHOT_PATH + testScriptName + "-" + timeStamp);
 				FileUtils.copyFile(scrFile, dstpath);
+				// to insert screenshot at starting in report
 				test.addScreenCaptureFromPath("./../img/test.png");
+				// to insert screenshot at step failed in report
 				test.fail(MediaEntityBuilder.createScreenCaptureFromPath("./../img/test.png").build());
 				String msg = result.getThrowable().getMessage();
 				test.fail("Failed Reason : " + msg);
