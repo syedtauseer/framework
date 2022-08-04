@@ -8,10 +8,12 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 	@FindBy(id = "username")
 	private WebElement unTB;
+
 	@FindBy(name = "pwd")
 	private WebElement pwTB;
+
 	@FindBy(xpath = "//div[text()='Login ']")
-	private WebElement loginBttn;
+	private WebElement loginBTN;
 
 	public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -26,6 +28,6 @@ public class LoginPage {
 	}
 
 	public void loginButton() {
-		loginBttn.click();
+		loginBTN.click();
 	}
 }
