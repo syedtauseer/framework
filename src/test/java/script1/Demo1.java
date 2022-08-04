@@ -1,4 +1,4 @@
-package script;
+package script1;
 
 import org.testng.Assert;
 import org.testng.Reporter;
